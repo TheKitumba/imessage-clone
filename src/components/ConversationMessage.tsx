@@ -38,7 +38,7 @@ export const ConversationMessage = (props: ConversationMessageProps) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: "80%",
+    maxWidth: "80%",
     backgroundColor: "red",
     paddingHorizontal: 14,
     paddingVertical: 7,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    fontSize: 17,
+    fontSize: 16,
     lineHeight: 22,
   },
 });

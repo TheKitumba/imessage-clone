@@ -1,12 +1,5 @@
 import { colors } from "@/theme/colors";
-import { Ellipsis, Mic, Search, SquarePen } from "lucide-react-native";
-import {
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { StyleSheet } from "react-native";
 
 type MainHeaderProps = {
   search: string;
@@ -15,39 +8,40 @@ type MainHeaderProps = {
 };
 
 export const MainHeader = (props: MainHeaderProps) => {
-  return (
-    <View style={styles.header}>
-      <View style={styles.headerTop}>
-        <Text style={styles.headerTitle}>Messages</Text>
-        <View style={styles.headerRight}>
-          <TouchableOpacity style={styles.headerRightMoreButton}>
-            <Ellipsis size={20} color={colors.zinc["100"]} />
-          </TouchableOpacity>
+  return null;
+  // return (
+  //   <View style={styles.header}>
+  //     <View style={styles.headerTop}>
+  //       <Text style={styles.headerTitle}>Messages</Text>
+  //       <View style={styles.headerRight}>
+  //         <TouchableOpacity style={styles.headerRightMoreButton}>
+  //           <Ellipsis size={20} color={colors.zinc["100"]} />
+  //         </TouchableOpacity>
 
-          <TouchableOpacity style={styles.headerRightWriteButton}>
-            <SquarePen size={20} color={colors.zinc["100"]} />
-          </TouchableOpacity>
-        </View>
-      </View>
+  //         <TouchableOpacity style={styles.headerRightWriteButton}>
+  //           <SquarePen size={20} color={colors.zinc["100"]} />
+  //         </TouchableOpacity>
+  //       </View>
+  //     </View>
 
-      <View style={styles.headerSearchContainer}>
-        <Search size={20} color={colors.zinc[400]} />
-        <TextInput
-          placeholder="Search"
-          style={styles.searchInput}
-          numberOfLines={1}
-          multiline={false}
-          keyboardType="web-search"
-          onChangeText={props.onSearchChange}
-          value={props.search}
-          onSubmitEditing={props.onSearch}
-          blurOnSubmit
-          placeholderTextColor={colors.zinc[500]}
-        />
-        <Mic size={20} color={colors.zinc[400]} />
-      </View>
-    </View>
-  );
+  //     <View style={styles.headerSearchContainer}>
+  //       <Search size={20} color={colors.zinc[400]} />
+  //       <TextInput
+  //         placeholder="Search"
+  //         style={styles.searchInput}
+  //         numberOfLines={1}
+  //         multiline={false}
+  //         keyboardType="web-search"
+  //         onChangeText={props.onSearchChange}
+  //         value={props.search}
+  //         onSubmitEditing={props.onSearch}
+  //         blurOnSubmit
+  //         placeholderTextColor={colors.zinc[500]}
+  //       />
+  //       <Mic size={20} color={colors.zinc[400]} />
+  //     </View>
+  //   </View>
+  // );
 };
 
 const styles = StyleSheet.create({

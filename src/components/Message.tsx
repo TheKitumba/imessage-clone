@@ -11,7 +11,7 @@ export const Message = (props: MessageProps) => {
   const router = useRouter();
 
   const handlePress = () => {
-    router.push(`/(tabs)/message/${props.data.id}`);
+    router.push(`/(stack)/message/${props.data.id}`);
   };
 
   return (
